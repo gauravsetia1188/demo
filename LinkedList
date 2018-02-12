@@ -1,0 +1,49 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Link{
+	
+	public int idata;
+	public Link next;
+
+	public Link()
+	{
+		idata=0;
+		next=null;
+	}
+	public Link(int idata)
+	{
+		this.idata=idata;
+		
+	}
+
+
+}
+
+class LinkList{
+	
+	private Link first;
+
+	public void LinkList()
+	{
+		first=null;
+	}
+
+	public boolean isEmpty()
+	{
+		return (first==null);
+	}
+
+	public insertFirst(int data)
+	{
+		Link newLink=new Link(data);
+		newLink.next=first;
+		first=newLink;
+	}
+
+	public deleteFirst(){
+		
+	}
+
+}
